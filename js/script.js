@@ -28,6 +28,13 @@ createApp({
         }
     },
     methods: {
+        isDone : function(task){
+            if (task.done === false) {
+                task.done = true;
+            } else {
+                task.done = false;
+            };
+        }
     }
 }).mount('#app');
 

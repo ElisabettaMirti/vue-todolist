@@ -15,7 +15,7 @@
         <main> 
             <div class="list-container">
                 <ul>
-                    <li v-for="(item, index) in itemList" :key="index">
+                    <li v-for="(item, index) in itemList" :key="index" :class="(item.done === true) ? 'done' : ''" @click="isDone(item)">
                         {{ item.content }}
                     </li>
                 </ul>
