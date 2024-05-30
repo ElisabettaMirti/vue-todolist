@@ -21,7 +21,7 @@
                         <span :class="(item.done === true) ? 'done' : ''" @click="isDone(item)">
                             {{ item.content }}
                         </span>
-                        <i class="fa-solid fa-delete-left"></i>
+                        <i class="fa-solid fa-delete-left" @click="removeTask(index)"></i>
                     </li>
                 </ul>
             </div>

@@ -36,8 +36,8 @@ createApp({
             }
         },
 
-        removeTask: function(){ //funzione per eliminare il task
-
+        removeTask: function(taskIndex){ //funzione per eliminare il task (grazie Giordano di avermi esplicato nuovamente lo splice)
+            this.itemList.splice(taskIndex, 1);
         }
     }
 }).mount('#app');
