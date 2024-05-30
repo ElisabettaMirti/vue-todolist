@@ -30,13 +30,17 @@
                         <span :class="(item.done === true) ? 'done' : ''" @click="isDone(item)">
                             {{ item.content }}
                         </span>
-                        <i class="fa-solid fa-delete-left" @click="removeTask(index)"></i>
+                        <span>
+                            <i class="fa-solid fa-wand-magic-sparkles" @click="editTask(index)"></i>
+                            <i class="fa-solid fa-delete-left" @click="removeTask(index)"></i>
+                        </span>
+                        
                     </li>
                 </ul>
                 <div class="input-container">
                     <label for="new-task">Aggiungi un'attività:</label>
                     <input type="text" id="new-task" v-model="newTaskContent">
-                    <button @click="addTask(newTaskContent)">
+                    <button @click="addTask">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>

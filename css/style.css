@@ -49,6 +49,10 @@ li{
     margin-bottom: .5rem;
 }
 
+li i {
+    margin-left: .5rem;
+}
+
 label,
 input{
     margin-right: .5rem;

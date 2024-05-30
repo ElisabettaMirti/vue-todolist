@@ -24,7 +24,8 @@ createApp({
                     content: "Comprare un quaderno nuovo",
                     done: false
                 }
-            ]
+            ],
+            newTaskContent: ''
         }
     },
     methods: {
@@ -40,13 +41,17 @@ createApp({
             this.itemList.splice(taskIndex, 1);
         },
 
-        addTask: function(newTaskContent){
+        addTask: function(){
             const newTask = {
-                content: newTaskContent,
+                content: this.newTaskContent,
                 done: false
             }
             this.itemList.push(newTask);
             this.newTaskContent = "";
+        },
+
+        editTask: function(taskIndex){
+            this.itemList[taskIndex].content = prompt('Modifica qua:');
         }
     }
 }).mount('#app');
