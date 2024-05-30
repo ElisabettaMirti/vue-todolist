@@ -46,6 +46,7 @@ createApp({
                 done: false
             }
             this.itemList.push(newTask);
+            this.newTaskContent = "";
         }
     }
 }).mount('#app');
