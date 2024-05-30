@@ -16,3 +16,17 @@ MILESTONE 3
 Bonus:
 > 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 > 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+
+
+
+
+>creo la struttura dati
+>inserisco il v-for per portarli nell'html come li
+>creo la classe done nel css
+>applico la classe con v-bind e con un ternario 
+    >al click, applico la classe; se è attiva, la tolgo
+
+
+
+
+

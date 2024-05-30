@@ -12,8 +12,14 @@
         <header>
             <h1>Todo List</h1>
         </header>
-        <main>
-
+        <main> 
+            <div class="list-container">
+                <ul>
+                    <li v-for="(item, index) in itemList" :key="index">
+                        {{ item.content }}
+                    </li>
+                </ul>
+            </div>
         </main>
     </div>
 
