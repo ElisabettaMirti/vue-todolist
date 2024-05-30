@@ -27,6 +27,13 @@ Bonus:
     >al click, applico la classe; se è attiva, la tolgo
 
 
+>creo la funzione che tolga il li con splice
+>creo un bottone x e ce la applico
+
+>creo una funzione che mi permette di aggiungere task pushandoli nell'array
+>aggiungo un input con v-model che richiami la funzione
+
+
 
 
 
