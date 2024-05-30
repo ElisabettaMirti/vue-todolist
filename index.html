@@ -24,6 +24,9 @@
                         <i class="fa-solid fa-delete-left" @click="removeTask(index)"></i>
                     </li>
                 </ul>
+                <label for="new-task">Aggiungi un'attività:</label>
+                <input type="text" id="new-task" v-model="newTaskContent">
+                <button @click="addTask(newTaskContent)">Inserisci attività</button>
             </div>
         </main>
     </div>
