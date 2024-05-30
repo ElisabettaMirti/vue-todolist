@@ -28,12 +28,16 @@ createApp({
         }
     },
     methods: {
-        isDone : function(task){
+        isDone : function(task){  //funzione per mettere e togliere la classe done al task
             if (task.done === false) {
                 task.done = true;
             } else {
                 task.done = false;
-            };
+            }
+        },
+
+        removeTask: function(){ //funzione per eliminare il task
+
         }
     }
 }).mount('#app');

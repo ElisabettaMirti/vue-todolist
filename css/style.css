@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
 }
 
-li.done{
+.done{
     text-decoration: line-through;
     color: rgb(94, 94, 94);
 }
